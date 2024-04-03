@@ -1,0 +1,19 @@
+.cardBox
+{
+    height: 16rem;
+    min-width: 14rem;
+    border: 1px solid red;
+    position: relative;
+    margin-right: 2rem;
+    border-radius: 1rem;
+    cursor: pointer;
+}
+
+.cardBox h3
+{
+    color: #fff;
+    position: absolute;
+    bottom: 0;
+    font-size: 2rem;
+    left: 1.5rem;
+}

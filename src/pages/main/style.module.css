@@ -1,0 +1,22 @@
+.test
+{
+    color: red;
+}
+
+.sectionBooks
+{
+    display: flex;
+    overflow-y: auto;
+    height: 17.5rem;
+}
+
+::-webkit-scrollbar {
+    background-color: #504F4F;
+    border-radius: 1rem;
+    height: 0.8rem;
+}
+
+::-webkit-scrollbar-thumb {
+    background-color: #888;
+    border-radius: 1rem;
+}
