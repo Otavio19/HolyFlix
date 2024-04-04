@@ -5,3 +5,44 @@
     margin: auto;
     
 }
+
+.head
+{
+    height: 20rem;
+    padding: 2rem;
+    position: relative;
+    color: #fff;
+}
+
+.head h1
+{
+    position: absolute;
+    bottom: 2.5rem;
+    font-size: 5rem;
+}
+
+.testamentBook
+{
+    position: absolute;
+    right: 1rem;
+    top: 1rem;
+}
+
+.head button
+{
+    position: absolute;
+    bottom: 1rem;
+    font-size: 1.5rem;
+    padding: 0.2rem 2rem;
+    background-color: red;
+    border: none;
+    color: #fff;
+    cursor: pointer;
+}
+
+.resume
+{
+    color: #fff;
+    padding: 2rem;
+    font-size: 1.2rem;
+}

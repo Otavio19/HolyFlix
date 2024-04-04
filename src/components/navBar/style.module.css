@@ -1,0 +1,14 @@
+ul
+{
+    display: flex;
+    justify-content: right;
+    list-style: none;
+    padding-right: 2rem;
+}
+
+ul li
+{
+    margin: 1rem;
+    color: #fff;
+    font-size: 1.3rem;
+}
