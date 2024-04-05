@@ -1,0 +1,21 @@
+.page
+{
+    color: #fff;
+}
+
+.page h1
+{
+    margin-left: 10%;
+    margin-bottom: 2rem;
+}
+
+.page button
+{
+    font-size: 1.5rem;
+    padding: 0.2rem 2rem;
+    background-color: red;
+    border: none;
+    color: #fff;
+    cursor: pointer;
+    margin-left: 10%;
+}

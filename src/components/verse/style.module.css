@@ -1,0 +1,14 @@
+.verseBox
+{
+    width: 80%;
+    margin: auto;
+    background-color: #3D3D3D;
+    padding: 1rem;
+    color: #fff;
+    margin-bottom: 0.5rem;
+}
+
+.verseBox span
+{
+    margin-right: 1rem;
+}

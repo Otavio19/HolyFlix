@@ -1,7 +1,7 @@
 import style from './style.module.css'
 import App from '../../App'
 import { useEffect, useState } from 'react'
-import { useParams } from 'react-router-dom'
+import { Link, useParams } from 'react-router-dom'
 
 const Book = () => {
 
@@ -14,13 +14,17 @@ const Book = () => {
     }
 
     const [book, setBook] = useState('Vazio')
+    let chapters = []
 
     useEffect(() => {
         const fetchBook = async () => {
             const response = await fetch(URL, options)
             const data = await response.json()
+            for(let i = 1 ; i <= data.chapters ; i++){
+                chapters.push(i)
+            }
+
             setBook(data)
-            console.log(data)
         }
 
         fetchBook()
@@ -33,15 +37,16 @@ const Book = () => {
     return (
         <div className={style.bookBox}>
             <div className={ style.head }>
-                <h3>Capitulos: 28</h3>
+                <h3>Capitulos: { book.chapters }</h3>
                 <p>Autor: {book.author}</p>
                 <p className={ style.testamentBook }>{testament}</p>
                 <h1>{book.name}</h1>
-                <button>Ler</button>
-            </div>
-
-            <div className={ style.resume }>
-                { book.comment == '' ? 'Não possui resumo.' :  book.comment}
+                
+                    <Link to={`/verses/acf/${ abbrev }/1`}>
+                        <button>
+                            Ler
+                        </button>
+                    </Link>
             </div>
         </div>
     )

@@ -1,18 +1,16 @@
 import { Link } from "react-router-dom"
 import { style } from './style.module.css'
+import { BiSolidHomeAlt2 } from "react-icons/bi";
+
 const NavBar = () =>{
     return(
         <ul>
             <Link to='/'>
                 <li>
-                    Home
+                    <BiSolidHomeAlt2 />
                 </li>
             </Link>
-            <Link to='/login'>
-                <li>
-                    Login
-                </li>
-            </Link>
+
         </ul>
     )
 }

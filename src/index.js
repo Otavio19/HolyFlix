@@ -7,6 +7,11 @@ import { Router, RouterProvider, createBrowserRouter } from 'react-router-dom';
 import Main from './pages/main';
 import Login from './pages/login';
 import Book from './pages/Book/inde';
+import Verses from './pages/verses';
+
+<style>
+  @import url('https://fonts.googleapis.com/css2?family=Exo:ital,wght@0,100..900;1,100..900&display=swap')
+</style>
 
 const router = createBrowserRouter([
   {
@@ -24,6 +29,10 @@ const router = createBrowserRouter([
       {
         path:'/login',
         element: <Login />
+      },
+      {
+        path:'/verses/acf/:abbrevUrl/:chapterUrl',
+        element: <Verses />
       }
     ]
   }
