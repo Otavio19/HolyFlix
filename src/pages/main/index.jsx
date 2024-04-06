@@ -3,6 +3,7 @@ import { Link } from 'react-router-dom'
 import style from './style.module.css'
 import CardBook from '../../components/CardBook'
 import Gênesis from '../../assets/img/Gênesis.jpg'
+import Marcos from '../../assets/img/marcos1615-removebg.png'
 
 const Main = () => {
 
@@ -28,6 +29,11 @@ const Main = () => {
     }, [])
     return (
         <>
+
+            <main>
+                <img src={ Marcos } alt="" />
+            </main>
+
             <h1>Livros</h1>
             <section className={style.sectionBooks}>
                 {

@@ -1,3 +1,16 @@
+.navBox
+{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0.5rem;
+}
+
+img
+{
+    width: 5rem;
+}
+
 ul
 {
     display: flex;
@@ -8,7 +21,6 @@ ul
 
 ul li
 {
-    margin: 1rem;
     color: #fff;
     font-size: 1.3rem;
 }
